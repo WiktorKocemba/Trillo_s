@@ -112,10 +112,18 @@
 
     &__notification{
         font-size: .8rem;
+        color: var(--color-white);
         border-radius: 50%;
         height: 1.75rem;
         width:  1.75rem;
         background-color: var(--color-primary);
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__user{
