@@ -77,10 +77,31 @@ body {
     fill: var(--color-grey-light-4); }
 
 .user-nav {
-  background-color: yellowgreen; }
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch; }
+  .user-nav > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center; }
+  .user-nav > *:hover {
+    background-color: var(--color-grey-light-2); }
   .user-nav__icon {
     width: 2.25rem;
-    height: 2.25rem; }
+    height: 2.25rem;
+    fill: var(--color-grey-dark-2); }
+    .user-nav__icon--box {
+      position: relative; }
+  .user-nav__notification {
+    font-size: .8rem;
+    border-radius: 50%;
+    height: 1.75rem;
+    width: 1.75rem;
+    background-color: var(--color-primary); }
   .user-nav__user--photo {
     height: 3.75rem;
     border-radius: 50%; }
