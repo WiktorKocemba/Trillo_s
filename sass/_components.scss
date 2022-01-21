@@ -288,9 +288,19 @@
     cursor: pointer;
     transition: all .2s;
 
+    & span{
+        transition: margin-left .2s;
+        margin-left: .3rem;
+    }
+
     &:hover{
         color: var(--color-grey-dark-1);
+
+        & span{
+            margin-left: .8rem;
+        }
     }
+
 
     &:focus{
         outline:none;
@@ -396,7 +406,69 @@
     }
 }
 
+//////////////////////////////
+// REVIEWS
+.reviews{
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-light);
+    padding: 3rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+    overflow: hidden;
 
+    &__text{
+        margin-bottom: 2rem;
+        position: relative;
+        z-index: 10;
+    }
+
+    &__user{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__photo{
+        height: 4.5rem;
+        width: 4.5rem;
+        border-radius: 50%;
+        margin-right: 1.5rem;
+    }
+
+    &__user--box{
+        margin-right: auto;
+    }
+
+    &__user--name{
+        font-size: 1.1;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: .4rem;
+    }
+
+    &__user--date{
+        font-size: 1;
+        color: var(--color-grey-dark-3);
+    }
+
+    &__rating{
+        font-size: 2.2rem;
+        font-weight: 300;
+        color: var(--color-primary);
+    }
+
+    &::before{
+        content: "\201C";
+        color: var(--color-grey-light-2);
+        position: absolute;
+        left:-1rem;
+        top:-2.75rem;
+        font-size: 20rem;
+        line-height: 1;
+        font-family: sans-serif;
+        z-index: 1;
+    }
+}
 
 
 
